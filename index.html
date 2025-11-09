@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-in-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'float': 'float 3s ease-in-out infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-slate-900 text-gray-100 font-sans antialiased">
+    <nav class="fixed top-0 w-full z-50 glass">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-xl font-bold gradient-text">Heat and Temperature</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="https://ronald2117.github.io/calphy-website/" class="text-gray-300 hover:text-white transition-colors">Back to Homepage</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="pt-16">
+        <section id="learn-more" class="py-20 px-4">
+            <div class="flex flex-col items-center justify-center p-8 gap-8 text-center md:text-left">
+                <h1 class="text-5xl md:text-6xl font-bold gradient-text py-4 animate-fade-in">Heat and Temperature</h1>
+                <p style="width: 1200px; font-size: 22px; text-align: justify;" class="text-lg text-gray-300 mx-auto animate-slide-up">Heat is more than just something we feel, it’s energy in motion. Temperature tells us how fast the particles in a substance are moving, while heat explains how that energy flows from one object to another. <br><br> In this lesson, we explore how heat behaves, how we measure it, and why temperature isn’t the same thing as heat.
+
+This interactive page is paired with a short video lesson created by BSEMC (Batch 2027), covering topics such as temperature scales, unit conversion, heat transfer, and real-world applications. Whether you’re reviewing for class or learning it for the first time, you’re in the right place.</p>
+            </div>
+
+            <div class="flex flex-col items-center justify-center p-8 gap-8 text-center md:text-left">
+                <iframe class="rounded-lg" src="https://drive.google.com/file/d/1Ymnh4qz7yoyrvBna6Us1XgQWDnquXj9P/preview" width="1200px" height="675px" allow="autoplay"></iframe>
+            </div>
+            <div class="sm:p-20 max-w-7xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Visit Other Pages</h2>
+                <div class="grid md:grid-cols-2 gap-10">
+
+                    <!-- Temperature -->
+                    <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <img src="images/interactive.png" alt="Temperature and Heat Image" class="max-w-3xl w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">Interactive Thermometer</h3>
+                            <p class="text-gray-400 mb-4">Experiment with real-time temperature changes and learn how Celsius, Fahrenheit, and Kelvin relate to each other through live conversions.</p>
+                            <a href="https://kurigohan1992.github.io/interactive-thermometer/" class="text-indigo-500 hover:text-indigo-300 font-semibold flex items-center">Visit Site <span class="material-symbols-outlined ml-2">arrow_forward</span></a>
+                        </div>
+                    </div>
+                    <!-- Heat Transfer Card -->
+                    <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <img src="images/campsite.jpeg" alt="Camp Image" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">Heat Transfer Demonstration</h3>
+                            <p class="text-gray-400 mb-4">Walking at a cold night, you spotted a campsite. A lone stew is at the campfire and when you opened the fire, it warms you up. Why?</p>
+                            <a href="https://jade-notauserdotcom.github.io/InHeatTransfer/" class="text-indigo-500 hover:text-indigo-300 font-semibold flex items-center">Visit Site <span class="material-symbols-outlined ml-2">arrow_forward</span></a>
+                        </div>
+                    </div>
+                    <!-- Heat Transfer Card -->
+                    <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <img src="images/quiz.jpg" alt="Camp Image" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">Quiz: Test Your Knowledge</h3>
+                            <p class="text-gray-400 mb-4">Check what you’ve learned, answer questions on temperature, unit conversion, and specific heat capacity.</p>
+                            <a href="https://super-kriztan.github.io/Conversion-Quiz/" class="text-indigo-500 hover:text-indigo-300 font-semibold flex items-center">Visit Site <span class="material-symbols-outlined ml-2">arrow_forward</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overview Section -->
+        <div id="tsparticles" class="absolute inset-0 -z-10"></div>
+        
+
+       
+
+        <!-- Learn More Section -->
+        
+    </main>
+</body>
+<script>
+  tsParticles.load("tsparticles", {
+    background: {
+      color: "#0f172a"
+    },
+    particles: {
+      number: { value: 50 },
+      size: { value: 2 },
+      move: { enable: true, speed: 1 },
+      links: { enable: true, color: "#ffffff", distance: 100 }
+    }
+  });
+</script>
+
+</html>
